@@ -1,0 +1,54 @@
+<app-nav></app-nav>
+<div class="container mt-3">
+    <h2>Create Travel Request</h2>
+    <form [formGroup]="travelRequestForm" (ngSubmit)="submitTravelRequest()">
+      <div class="form-group">
+        <label for="from_location">From Location</label>
+        <input type="text" class="form-control" id="from_location" formControlName="from_location" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="to_location">To Location</label>
+        <input type="text" class="form-control" id="to_location" formControlName="to_location" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="travel_from">Travel From</label>
+        <input type="date" class="form-control" id="travel_from" formControlName="travel_from" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="travel_to">Travel To</label>
+        <input type="date" class="form-control" id="travel_to" formControlName="travel_to" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="preferred_mode_of_travel">Preferred Mode of Travel</label>
+        <select class="form-control" id="preferred_mode_of_travel" formControlName="preferred_mode_of_travel">
+          <option value="Flight">Flight</option>
+          <option value="Bus">Bus</option>
+          <option value="Train">Train</option>
+          <option value="Ship">Ship</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <label for="is_lodging_required">Lodging Required</label>
+        <input type="checkbox" id="is_lodging_required" formControlName="is_lodging_required">
+      </div>
+  
+      <div class="form-group">
+        <label for="preferred_lodge">Preferred Lodge</label>
+        <input type="text" class="form-control" id="preferred_lodge" formControlName="preferred_lodge">
+      </div>
+  
+      <div class="form-group">
+        <label for="purpose_of_travel">Purpose of Travel</label>
+        <textarea class="form-control" id="purpose_of_travel" formControlName="purpose_of_travel" rows="3" required></textarea>
+      </div>
+  
+      <button type="submit" class="btn btn-primary mt-3">Submit Request</button>
+    </form>
+</div>
+
+  

@@ -1,0 +1,20 @@
+/* Custom background color */
+.bg-sky {
+    background-color: #e0f7fa;
+  }
+  
+  /* Custom background color for body */
+  .bg-very-light-blue {
+      background-color: #f0f8ff; 
+  }
+  /* Additional top padding for container on smaller screens */
+  .container {
+      padding-top: 3rem; /* Added padding for mobile view */
+  }
+  
+  /* Background color */
+  .bg-sky {
+      background-color: #e0f7fa;
+    }
+    
+   

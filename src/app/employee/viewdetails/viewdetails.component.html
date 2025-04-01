@@ -1,0 +1,48 @@
+<app-nav></app-nav>
+<div class="container mt-3">
+    <h2>Travel Request Details</h2>
+    <div *ngIf="requestDetails">
+      <table class="table">
+        <tr>
+          <th>From Location</th>
+          <td>{{ requestDetails.from_location }}</td>
+        </tr>
+        <tr>
+          <th>To Location</th>
+          <td>{{ requestDetails.to_location }}</td>
+        </tr>
+        <tr>
+          <th>Travel From</th>
+          <td>{{ requestDetails.travel_from | date }}</td>
+        </tr>
+        <tr>
+          <th>Travel To</th>
+          <td>{{ requestDetails.travel_to | date }}</td>
+        </tr>
+        <tr>
+          <th>Preferred Mode of Travel</th>
+          <td>{{ requestDetails.preferred_mode_of_travel }}</td>
+        </tr>
+        <tr>
+          <th>Lodging Required</th>
+          <td>{{ requestDetails.is_lodging_required ? 'Yes' : 'No' }}</td>
+        </tr>
+        <tr>
+          <th>Preferred Lodge</th>
+          <td>{{ requestDetails.preferred_lodge || 'Not provided' }}</td>
+        </tr>
+        <tr>
+          <th>Purpose of Travel</th>
+          <td>{{ requestDetails.purpose_of_travel }}</td>
+        </tr>
+        <tr>
+          <th>Employee Status</th>
+          <td>{{ requestDetails.employee_status }}</td>
+        </tr>
+      </table>
+    </div>
+    <button class="btn btn-primary" routerLink="/employee/edashboard">Back to Dashboard</button>
+  </div>
+  
+  <app-footer></app-footer>
+  

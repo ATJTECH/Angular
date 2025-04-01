@@ -1,0 +1,54 @@
+/* Custom Navbar Styles */
+.navbar {
+    padding: 1rem; /* Add padding for better spacing */
+}
+
+.navbar .navbar-brand {
+    font-size: 1.5rem; /* Increase the size of the brand name */
+}
+
+.navbar .navbar-text {
+    font-size: 1rem; /* Adjust the username font size */
+    color: #f8f9fa; /* Light color for better contrast */
+}
+
+.navbar-toggler-icon {
+    background-color: #f8f9fa; /* Ensure the burger icon is visible on dark background */
+}
+
+/* Avatar Styles */
+.navbar-text img {
+    border-radius: 50%; /* Ensure the avatar is a circle */
+    border: 2px solid #fff; /* Optional: adds a border around the avatar */
+}
+
+/* Logout button */
+.navbar .btn-link {
+    color: #f8f9fa; /* Light color for the logout button */
+    font-weight: 600; /* Make the logout text bold */
+}
+
+.navbar .btn-link:hover {
+    color: #d4d4d4; /* Slightly lighter on hover */
+}
+
+/* Add space between items */
+.navbar-nav {
+    margin-left: auto; /* Push the navbar items to the right */
+}
+
+/* Adjust mobile view */
+@media (max-width: 768px) {
+    .navbar .navbar-text {
+        font-size: 0.9rem; /* Smaller font size for mobile view */
+    }
+    .navbar .navbar-brand {
+        font-size: 1.25rem; /* Adjust brand size on smaller screens */
+    }
+}
+
+/* Custom class to remove border around avatar */
+.no-border {
+    border: none !important;
+}
+
